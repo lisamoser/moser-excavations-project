@@ -1,29 +1,35 @@
 :root {
   --brand-color: #da8d41;
+  --secondary-color: #404042;
   --button-color: #f6c08a;
   --heading-font: "Playfair Display", serif;
   --other-font: "Poppins", sans-serif;
 }
 body {
   font-family: var(--other-font);
+  color: var(--secondary-color);
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: white;
   font-family: var(--heading-font);
   font-weight: bold;
 }
 h1 {
+  color: white;
   font-size: 96px;
 }
-@media (max-width: 840px) {
-  h1 {
-    font-size: 68px;
-  }
+h2 {
+  color: var(--brand-color);
+  font-size: 64px;
+}
+p {
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .top-section {
@@ -36,10 +42,11 @@ h1 {
   font-weight: normal;
   line-height: 2;
   font-family: var(--other-font);
+  color: var(--secondary-color);
 }
 .top-section p {
   font-family: var(--other-font);
-  color: white;
+  color: var(--secondary-color);
   font-size: 32px;
   margin: 0;
 }
@@ -50,4 +57,40 @@ h1 {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+}
+.btn-branding-outline {
+  background-color: white;
+  border: 1px solid var(--brand-color);
+  border-radius: 4px;
+  color: var(--button-color);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 10px 25px;
+}
+.project-description {
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+@media (max-width: 840px) {
+  h1 {
+    font-size: 58px;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .top-section {
+    padding: 80px 10px;
+  }
+  .top-section h2 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .project-description {
+    padding: 30px;
+    text-align: center;
+    margin-bottom: none;
+  }
 }
