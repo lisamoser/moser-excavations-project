@@ -50,6 +50,9 @@ p {
   font-size: 32px;
   margin: 0;
 }
+.what-is-civil-con p {
+  font-size: 20px;
+}
 .btn-branding {
   background-color: var(--button-color);
   border-radius: 4px;
