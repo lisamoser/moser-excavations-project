@@ -35,7 +35,7 @@ p {
 .top-section {
   background: var(--brand-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 120px 20px;
 }
 .top-section h2 {
   font-size: 30px;
@@ -43,6 +43,11 @@ p {
   line-height: 2;
   font-family: var(--other-font);
   color: var(--secondary-color);
+}
+.top-section h3 {
+  font-size: 50px;
+  font-weight: normal;
+  margin: 0;
 }
 .top-section p {
   font-family: var(--other-font);
