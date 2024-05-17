@@ -112,11 +112,16 @@ input[type="submit"] {
   margin-bottom: 30px;
 }
 .contact-us {
-  padding: 20px 0px 0px 100px;
+  padding: 20px 0px 0px 20px;
   margin-bottom: 30px;
 }
 .container {
   max-width: 90%;
+}
+.contact-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
 }
 
 @media (max-width: 840px) {
@@ -143,5 +148,8 @@ input[type="submit"] {
   }
   .about-page-info {
     text-align: center;
+  }
+  .contact-page {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
